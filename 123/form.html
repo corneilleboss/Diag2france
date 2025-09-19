@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre bien</title>
+    <link rel="stylesheet" href="style-form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Votre bien</h1>
+        <p class="subtitle">Quel est le type de bien ?</p>
+        
+        <div class="selection-buttons">
+            <button class="btn active" id="maison-btn">
+                <span>🏠 Maison</span>
+            </button>
+            <button class="btn" id="appartement-btn">
+                <span>🏢 Appartement</span>
+            </button>
+        </div>
+        
+        <div class="selection-buttons">
+            <button class="btn" id="copropriete-oui">
+                <span>En copropriété</span>
+            </button>
+            <button class="btn active" id="copropriete-non">
+                <span>Hors copropriété</span>
+            </button>
+        </div>
+        
+        <p class="subtitle">Quelle est l'adresse du bien ?</p>
+        <div class="address-display">
+            <p id="adresse-affichee"></p>
+        </div>
+        
+        <p class="subtitle">Quelle est la surface approximative de votre bien ?</p>
+        <select class="form-select" id="surface-select">
+            <option value="">Sélectionnez la surface</option>
+            <option value="moins-20">Moins de 20 m²</option>
+            <option value="moins-40">Moins de 40 m²</option>
+            <option value="moins-60">Moins de 60 m²</option>
+            <option value="moins-80">Moins de 80 m²</option>
+            <option value="moins-100">Moins de 100 m²</option>
+            <option value="moins-120">Moins de 120 m²</option>
+            <option value="moins-140">Moins de 140 m²</option>
+            <option value="moins-160">Moins de 160 m²</option>
+            <option value="moins-180">Moins de 180 m²</option>
+            <option value="moins-200">Moins de 200 m²</option>
+            <option value="moins-220">Moins de 220 m²</option>
+        </select>
+        
+        <p class="subtitle">Quelle est l'année de votre construction ?</p>
+        <select class="form-select" id="annee-construction">
+            <option value="">Sélectionnez la date</option>
+            <option value="avant-1949">Avant 1949</option>
+            <option value="apres-1949">Après le 1er janvier 1949</option>
+            <option value="apres-1997">Après le 1er juillet 1997</option>
+        </select>
+        
+        <p class="subtitle">Date de votre installation</p>
+        <p class="subtitle-sub">Gaz</p>
+        <select class="form-select" id="gaz-installation">
+            <option value="">Pas d'installation</option>
+            <option value="moins-15ans">Moins de 15 ans</option>
+            <option value="plus-15ans">Plus de 15 ans</option>
+        </select>
+        
+        <p class="subtitle-sub">Électricité</p>
+        <select class="form-select" id="elec-installation">
+            <option value="">Pas d'installation</option>
+            <option value="moins-15ans">Moins de 15 ans</option>
+            <option value="plus-15ans">Plus de 15 ans</option>
+        </select>
+
+        <button class="next-btn">
+            <span>Continuer</span>
+        </button>
+    </div>
+
+    <script src="script-form.js"></script>
+</body>
+</html>

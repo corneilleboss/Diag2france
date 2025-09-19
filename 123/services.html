@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Additionnels</title>
+    <link rel="stylesheet" href="style-services.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Services additionnels</h1>
+        
+        <div class="service-card">
+            <div class="service-info">
+                <img src="https://via.placeholder.com/60" alt="Logo Visite 3D">
+                <div class="service-details">
+                    <p class="service-name">Visite 3D</p>
+                    <p class="service-description">Demander la visite 3D de votre bien, elle vous aidera à mettre en avant vos annonces et vos visiteurs pourront ensuite la partager à leurs proches.</p>
+                </div>
+            </div>
+            <div class="service-price">
+                <p>190€</p>
+                <input type="checkbox" id="visite-3d" class="service-checkbox" data-price="190">
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-info">
+                <img src="https://via.placeholder.com/60" alt="Logo Certificat de Qualité de Vie">
+                <div class="service-details">
+                    <p class="service-name">Certificat de Qualité de Vie</p>
+                    <p class="service-description">Le certificat de Qualité de Vie vous permet de mettre en avant les qualités de votre bien grâce à la géolocalisation d'indicateurs clés: transports, accès aux voies de communication, établissements scolaires, commerces, services, accès au numérique, données de santé publique.</p>
+                </div>
+            </div>
+            <div class="service-price">
+                <p>40€</p>
+                <input type="checkbox" id="qualite-vie" class="service-checkbox" data-price="40">
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <p>⚠ Ces services vous seront facturés séparément.</p>
+        </div>
+
+        <button class="pay-btn">
+            <span>Payer</span>
+        </button>
+
+        <button class="back-btn">
+            <span>Retour</span>
+        </button>
+    </div>
+
+    <script src="script-services.js"></script>
+</body>
+</html>

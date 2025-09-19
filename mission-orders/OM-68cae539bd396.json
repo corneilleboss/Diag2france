@@ -1,0 +1,43 @@
+{
+    "missionId": "OM-68cae539bd396",
+    "quoteId": "Q-68cacb5104527",
+    "client": {
+        "nom": "ok",
+        "email": "corneillegbaguidi13@gmail.com",
+        "telephone": "90909090"
+    },
+    "diagnostiqueur": {
+        "denomination_sociale": "FRATGO DIAGNOSTICS",
+        "nom_entreprise": "FRATGO DIAGNOSTICS",
+        "siege_social": "123 RUE DE LA LIBERT\u00c9, 75000 PARIS",
+        "capital_social": "50 000 \u20ac",
+        "siret": "123 456 789 00000",
+        "code_ape": "7112B",
+        "tva": "FR123456789",
+        "assureur": "AXA",
+        "police_assurance": "RC123456789",
+        "numero_certifie": "CERTI-123456",
+        "organisme_certification": "CERTIF-PRO",
+        "mediateur_nom": "M\u00e9diateur de la consommation",
+        "mediateur_tel": "+33112345678",
+        "mediateur_email": "contact@mediateur.com",
+        "mediateur_site": "www.mediateur.com"
+    },
+    "date_mission": "2025-10-19",
+    "diagnostics": [
+        "DPE",
+        "AMIANTE",
+        "ERP",
+        "THERMITES",
+        "CARREZE BOUTIN"
+    ],
+    "services": [
+        {
+            "name": "Service diag 1",
+            "price": 108
+        }
+    ],
+    "prixTotal": "343",
+    "status": "pending_signature",
+    "creation_date": "2025-09-17 16:43:37"
+}

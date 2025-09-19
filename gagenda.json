@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "stayloge-app-7b911",
+  "private_key_id": "a0261248f02ccc43da00b5ba31d5c56490aaf563",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCrmdDdcgAxuYRU\nq2HOFUD0AIM2j6GhwxVd86nOLDwZfrEXjGv8qTDfnGQDrJeoiayQNtidd/wTIcSs\nmFG2flSl/Q34XoTEu1N12FOqCMoSQI/UpXfOcDzJp760JEuQEwYdFpADMYL3zvlN\nZYYOv6LBEPxt1brjXibadPOeKlEZ9KHyWrBAlZuNqH6Cx5+4Y3Yq5TBzQczLUswa\nHWeauzfu1ok9KzgLoite/HNJ3KimN0rub6cp1gybkpwObkfVNd7fVpfEWJVsxYAI\nHuUJiwvEE+91FOlYUjGXjVg5BwnB5u3YNCM6aA9hFIJwC9d1BLPqft1DBOb+vd4a\nKjkvhRzbAgMBAAECgf8SFvO8frRfJxhzhcT68VZT31DvMSfirdItEglHZ0GMM2kb\n57uHqLdaI3sFKcbgLrbx33PO/nFPa58Rs5qAkhJg6eaSZcBKhso1KKlNTUqQdA/w\nmSUEz2ci7qmRorgFvQ9azSOi/ggOyNNEEIa/QloxaSYfgbPzhbRyBFHEfsU1T7OV\n+BfgOhkivWFS1d/mTLPglaExhYtIVf9M/IabuowiON2/GbyES1IWaQI+Szyzrk5v\nuuaTCmIdw/QT5LltMLgen+9JGE72wnlyYXL7zgrT7Q+X5yVf8F1UB8JKqpOzL/Bu\ngx6mEVO9t/siADIL8NZqJaxLIiML7s50gWjTB+UCgYEA7WqUzjeCzVHxaNejT7DW\nmhLEBbqnlWTmrIbxATGt9qGCz2Ch8JRCtHWfRDN8mqzNWihh88Az3x1Zo4xkIDIl\nqmgXLkY7VdVhZdlkhvA6irMbmrzzeFwF7Jip+L2i4H1fTiNfK4yJR4fiW14C/aw2\nzgMlB0Nu1gbciqV7VaUq378CgYEAuQhng24EVgrnVkDfTRHv+qTpZrdpBRWXj5+7\nmwW1y8oZ9cAmkYMAM3E1HD12IXkJTLI/xTL6Q5lFFEPECVwewQgcuQdhMOz4VA8G\nBrqZWWCQT4ySGNskirNjs4EWHUe9RinsEruJot39soMwLhm5OjeEyS8HV59KdRyX\n2bkCyeUCgYEAo38ectTvkw23PggiQyL45qm9rGRaPBt8b5uOJNBdiNa5Cq71VoQD\nW9sUjxcV3D7cPBZLPl1CW4gOzv5DhZiDL9L3A7sB6Z5EsKsA+5w79IBbpjgxQtW8\njq6jftS5cfdkxp69T3Q8pbICRAF99cu/AihQO6xIi8O15RUI1nYkDGkCgYARFjmY\n5Xv5BiC+0lbMoy9qEfiLx7wnAAty8+k7M5fKLeufyhLFtTc7iOTCqtpR1P+K2ZsR\n9tctjuXWLTvZMWyVns4oOAo9nmSAPrLrxCeNHWG2NuD28qW5OT+nv+/u3EUaSZzH\nThIzvBRFe9/jIfT870uP2IvxB4C0t+M989vSEQKBgHNqopwNetwEwKYBSQ4m2sjT\ntU6qJuVmImN4bxMzfm57DUUFal9NusVATatrY4hb+2PNiinAykvZk6r0z4rAIVL0\n8I25U2qUEucbV3hqph7BQ+S86LTwCbvsjP1M/BNN/ZvuBYVTaArY+2TGht+xnGQK\ncwg8k/2tXhuztCyjxVNW\n-----END PRIVATE KEY-----\n",
+  "client_email": "hubhabitats@stayloge-app-7b911.iam.gserviceaccount.com",
+  "client_id": "110153680412093563835",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hubhabitats%40stayloge-app-7b911.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

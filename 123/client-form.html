@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations du client</title>
+    <link rel="stylesheet" href="style-form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Informations du client</h1>
+        <form id="client-form">
+            <p class="subtitle">Nom et prénoms</p>
+            <input type="text" id="nom-client" placeholder="Nom et prénoms" required>
+
+            <p class="subtitle">Adresse mail</p>
+            <input type="email" id="email-client" placeholder="Adresse mail" required>
+
+            <p class="subtitle">Numéro de téléphone</p>
+            <input type="tel" id="tel-client" placeholder="Numéro de téléphone" required>
+            
+            <button class="next-btn" type="submit">
+                <span>Continuer</span>
+            </button>
+        </form>
+    </div>
+
+    <script src="script-client-form.js"></script>
+</body>
+</html>

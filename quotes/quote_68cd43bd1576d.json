@@ -1,0 +1,44 @@
+{
+    "quoteId": "quote_68cd43bd1576d",
+    "client": {
+        "type": "particulier",
+        "nom": "ok",
+        "prenom": "ok",
+        "email": "corneillegbaguidi13@gmail.com",
+        "telephone": "\u00e7\u00e0\u00e7\u00e0\u00e7\u00e0\u00e7\u00e0"
+    },
+    "diagnostiqueur": {
+        "nom": "corneilledev  LTD",
+        "prenom": "",
+        "email": "corneildev@missebomarket.com",
+        "telephone": "",
+        "denomination_sociale": "",
+        "siret": "",
+        "assureur": "",
+        "police_assurance": "",
+        "numero_certifie": "",
+        "adresse": ""
+    },
+    "adresse_bien": "Non sp\u00e9cifi\u00e9e",
+    "adresse_facturation": {
+        "adresse": null,
+        "ville": null,
+        "codePostal": null,
+        "isSame": true
+    },
+    "diagnostics": [
+        "DPE",
+        "AMIANTE",
+        "ERP",
+        "THERMITES",
+        "CARREZE BOUTIN",
+        "ELECTRICITE"
+    ],
+    "services": [],
+    "prixTotal": "315",
+    "dateRdv": "2025-11-06",
+    "heureRdv": "14:00",
+    "htmlContent": "\n    <div class='quote-header'>\n        <h1>Devis de diagnostic immobilier<\/h1>\n        <p><strong>Devis n\u00b0:<\/strong> quote_68cd43bd1576d<\/p>\n        <p><strong>Date:<\/strong> 19\/09\/2025<\/p>\n    <\/div>\n    <div class='section-client'>\n        <h2>Informations Client<\/h2>\n        <p><strong>Nom:<\/strong> ok<\/p>\n        <p><strong>Adresse du bien:<\/strong> Non sp\u00e9cifi\u00e9e<\/p>\n        <p><strong>Adresse de facturation:<\/strong> , , , 1<\/p>\n        <p><strong>Email:<\/strong> corneillegbaguidi13@gmail.com<\/p>\n        <p><strong>T\u00e9l\u00e9phone:<\/strong> \u00e7\u00e0\u00e7\u00e0\u00e7\u00e0\u00e7\u00e0<\/p>\n    <\/div>\n    <div class='section-diagnostiqueur'>\n        <h2>Informations Diagnostiqueur<\/h2>\n        <p><strong>Nom:<\/strong> corneilledev  LTD<\/p>\n        <p><strong>Soci\u00e9t\u00e9:<\/strong> <\/p>\n        <p><strong>Siret:<\/strong> <\/p>\n        <p><strong>Adresse:<\/strong> <\/p>\n    <\/div>\n    <div class='section-details'>\n        <h2>D\u00e9tails du Rendez-vous<\/h2>\n        <p><strong>Date:<\/strong> 2025-11-06<\/p>\n        <p><strong>Heure:<\/strong> 14:00<\/p>\n        <h3>Diagnostics<\/h3>\n        <ul><li>Diagnostic DPE<\/li><li>Diagnostic AMIANTE<\/li><li>Diagnostic ERP<\/li><li>Diagnostic THERMITES<\/li><li>Diagnostic CARREZE BOUTIN<\/li><li>Diagnostic ELECTRICITE<\/li><\/ul>\n        <h3>Services Additionnels<\/h3>\n        <ul><li>Aucun service additionnel.<\/li><\/ul>\n    <\/div>\n    <div class='section-prix'>\n        <h2>Prix<\/h2>\n        <p><strong>Prix HT:<\/strong> 262,50 \u20ac<\/p>\n        <p><strong>TVA (20%):<\/strong> 52,50 \u20ac<\/p>\n        <p class='prix-total'><strong>Prix Total TTC:<\/strong> 315,00 \u20ac<\/p>\n    <\/div>\n    <div class='section-note'>\n        <p><strong>Validit\u00e9 du devis:<\/strong> 30 jours \u00e0 compter de la date d'\u00e9mission.<\/p>\n        <p>Ce document est un devis et n'a pas de valeur contractuelle sans l'accord et la signature du client.<\/p>\n    <\/div>\n",
+    "creation_date": "2025-09-19 11:51:25",
+    "status": "quote_sent"
+}

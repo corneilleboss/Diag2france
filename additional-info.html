@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations Complémentaires</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #004d99;
+        }
+        .form-section {
+            display: none; /* Les sections sont cachées par défaut */
+            margin-top: 20px;
+        }
+        .form-section.active {
+            display: block;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Informations Complémentaires sur le bien</h1>
+    <p>Veuillez remplir les champs ci-dessous pour aider le diagnostiqueur à préparer son intervention.</p>
+    
+    <form id="additional-info-form">
+        <div id="dynamic-form-container"></div>
+        <button type="submit">Valider</button>
+    </form>
+</div>
+
+<script src="script-additional-info.js"></script>
+</body>
+</html>

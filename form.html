@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre bien</title>
+    <link rel="stylesheet" href="style-form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Votre bien</h1>
+        <p class="subtitle">Quel est le type de bien ?</p>
+        
+        <div class="selection-buttons">
+            <button class="btn active" id="maison-btn">
+                <span>🏠 Maison</span>
+            </button>
+            <button class="btn" id="appartement-btn">
+                <span>🏢 Appartement</span>
+            </button>
+        </div>
+        
+        <div class="selection-buttons">
+            <button class="btn" id="copropriete-oui">
+                <span>En copropriété</span>
+            </button>
+            <button class="btn active" id="copropriete-non">
+                <span>Hors copropriété</span>
+            </button>
+        </div>
+        
+        <p class="subtitle">Quelle est l'adresse du bien ?</p>
+        <div class="address-display">
+            <p id="adresse-affichee"></p>
+        </div>
+        
+        <p class="subtitle">Quelle est la surface approximative de votre bien ?</p>
+        <select class="form-select" id="surface-select">
+            <option value="">Sélectionnez la surface</option>
+            <option value="moins-20">Moins de 20 m²</option>
+            <option value="moins-40">Moins de 40 m²</option>
+            <option value="moins-60">Moins de 60 m²</option>
+            <option value="moins-80">Moins de 80 m²</option>
+            <option value="moins-100">Moins de 100 m²</option>
+            <option value="moins-120">Moins de 120 m²</option>
+            <option value="moins-140">Moins de 140 m²</option>
+            <option value="moins-160">Moins de 160 m²</option>
+            <option value="moins-180">Moins de 180 m²</option>
+            <option value="moins-200">Moins de 200 m²</option>
+            <option value="moins-220">Moins de 220 m²</option>
+        </select>
+        
+        <p class="subtitle">Quelle est l'année de votre construction ?</p>
+        <select class="form-select" id="annee-construction">
+            <option value="">Sélectionnez la date</option>
+            <option value="avant-1949">Avant 1949</option>
+            <option value="apres-1949">Après le 1er janvier 1949</option>
+            <option value="apres-1997">Après le 1er juillet 1997</option>
+        </select>
+        
+        <p class="subtitle">Date de votre installation</p>
+        <p class="subtitle-sub">Gaz</p>
+        <select class="form-select" id="gaz-installation">
+            <option value="">Pas d'installation</option>
+            <option value="moins-15ans">Moins de 15 ans</option>
+            <option value="plus-15ans">Plus de 15 ans</option>
+        </select>
+        
+        <p class="subtitle-sub">Électricité</p>
+        <select class="form-select" id="elec-installation">
+            <option value="">Pas d'installation</option>
+            <option value="moins-15ans">Moins de 15 ans</option>
+            <option value="plus-15ans">Plus de 15 ans</option>
+        </select>
+
+        <button class="next-btn">
+            <span>Continuer</span>
+        </button>
+    </div>
+    <div id="client-info-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <h2>Vos informations</h2>
+        <p>Veuillez entrer vos coordonnées pour continuer.</p>
+        <form id="client-info-form">
+            <div class="form-group">
+                <label><strong>Êtes-vous ?</strong></label>
+                <label>
+                    <input type="radio" name="client-type" value="particulier" checked> Un client particulier
+                </label>
+                <label>
+                    <input type="radio" name="client-type" value="professionnel"> Un client professionnel
+                </label>
+            </div>
+            <div id="particulier-fields" class="client-fields">
+                <div class="form-group">
+                    <label for="client-name">Nom</label>
+                    <input type="text" id="client-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="client-surname">Prénom</label>
+                    <input type="text" id="client-surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="client-email">Adresse e-mail</label>
+                    <input type="email" id="client-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="client-phone">Numéro de téléphone</label>
+                    <input type="tel" id="client-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="client-lot">Numéro de lot</label>
+                    <input type="tel" id="client-lot" required>
+                </div>
+            </div>
+            <div id="professionnel-fields" class="client-fields" style="display:none;">
+                <div class="form-group">
+                    <label for="pro-rep-name">Nom et prénom du représentant légal</label>
+                    <input type="text" id="pro-rep-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="pro-phone">Numéro de téléphone</label>
+                    <input type="text" id="pro-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="pro-address">Adresse du siège</label>
+                    <input type="text" id="pro-address" required>
+                </div>
+                <div class="form-group">
+                    <label for="pro-form">Forme juridique</label>
+                    <select id="pro-form" required>
+                        <option value="">Forme juridique</option>
+                        <option value="SCI">SCI</option>
+                        <option value="SARL/EURL">SARL / EURL</option>
+                        <option value="SAS/SASU">SAS / SASU</option>
+                        <option value="SCP">SCP</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pro-quality">Qualité</label>
+                    <input type="text" id="pro-quality" required>
+                </div>
+                <div class="form-group">
+                    <label for="pro-email">Adresse e-mail</label>
+                    <input type="email" id="pro-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pro-siret">Numéro de SIRET/RCS</label>
+                    <input type="text" id="pro-siret" required>
+                </div>
+                <div class="form-group">
+                    <label for="pro-tva">Numéro de TVA</label>
+                    <input type="text" id="pro-tva" required>
+                </div>
+                <div class="form-group">
+                    <label for="pro-numlot">Numéro de lot</label>
+                    <input type="text" id="pro-numlot" required>
+                </div>
+            </div>
+            <button type="submit" class="modal-continue-btn">Continuer</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+<style>
+/* Styles pour le pop-up (ajoutez-les à votre fichier style-form.css ou ici) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: rgb(15, 161, 245);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.modal-continue-btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+</style>
+    <script src="script-form.js"></script>
+</body>
+</html>

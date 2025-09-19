@@ -1,0 +1,199 @@
+body {
+    background-color: #2c2f33; /* Un gris foncé */
+    color: #fff; /* Texte blanc */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a7a7a7;
+    margin-top: 30px;
+}
+
+.subtitle-sub {
+    font-size: 1rem;
+    color: #a7a7a7;
+    margin-top: 10px;
+}
+
+.selection-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#maison-btn, #appartement-btn, #copropriete-oui, #copropriete-non {
+    background-color: #4f545c; /* Gris foncé */
+    color: #fff;
+}
+
+.btn.active {
+    background-color: #2196f3; /* Bleu clair */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.2);
+}
+
+.btn:hover {
+    background-color: #1e87e5; /* Bleu plus foncé au survol */
+}
+
+.form-select, .form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-select:focus, .form-input:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+.next-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #2196f3;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+    background-color: #1e87e5;
+}
+
+/* Styles pour le pop-up */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #23272a; /* Gris très foncé */
+    padding: 35px 30px 25px 30px;
+    border-radius: 18px;
+    text-align: left;
+    width: 95%;
+    max-width: 430px;
+    box-shadow: 0 8px 32px rgba(33, 150, 243, 0.15), 0 2px 8px rgba(0,0,0,0.25);
+    color: #fff;
+    position: relative;
+    
+    /* AJOUTS POUR LE DÉFILEMENT */
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2b3844;
+    text-align: center;
+}
+
+.modal-content p {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.modal-continue-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background-color: #0e1b25;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-continue-btn:hover {
+    background-color: #1e87e5;
+}
+
+#particulier-fields, #professionnel-fields {
+    margin-top: 20px;
+}
+
+#particulier-fields {
+    display: block;
+}
+
+#professionnel-fields {
+    display: none;
+}

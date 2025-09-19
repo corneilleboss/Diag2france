@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélectionner un diagnostiqueur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .diagnostiqueurs-list {
+            display: grid;
+            gap: 20px;
+        }
+        .diagnostiqueur-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            background-color: #fafafa;
+            position: relative;
+        }
+        .diagnostiqueur-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+            background-color: #f5f8ff;
+        }
+        .diagnostiqueur-card.selected {
+            border-color: #2962ff;
+            background-color: #e3f2fd;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .diagnostiqueur-info {
+            flex-grow: 1;
+        }
+        .diagnostiqueur-name {
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: #1a237e;
+            margin: 0 0 5px 0;
+        }
+        .diagnostiqueur-rating {
+            color: #ffc107;
+            font-size: 1.1rem;
+        }
+        .diagnostiqueur-details {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 8px;
+        }
+        .diagnostiqueur-distance {
+            font-weight: 600;
+            color: #2962ff;
+            white-space: nowrap;
+            font-size: 1rem;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            gap: 15px;
+        }
+        .action-buttons button {
+            flex: 1;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .back-btn {
+            background-color: #6c757d;
+            color: white;
+        }
+        .back-btn:hover {
+            background-color: #5a6268;
+            transform: translateY(-2px);
+        }
+        .continue-btn {
+            background-color: #2962ff;
+            color: white;
+        }
+        .continue-btn:hover:enabled {
+            background-color: #1e56d7;
+            transform: translateY(-2px);
+        }
+        .continue-btn:disabled {
+            background-color: #b0c2f0;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sélectionnez votre diagnostiqueur</h1>
+        
+        <div class="diagnostiqueurs-list" id="diagnostiqueurs-container">
+            <p>Chargement des diagnostiqueurs...</p>
+        </div>
+        
+        <div class="action-buttons">
+            <button class="back-btn">Retour</button>
+            <button class="continue-btn" id="continue-btn" disabled>Continuer</button>
+        </div>
+    </div>
+    
+    <script src="script-diagnostiqueurs.js"></script>
+</body>
+</html>

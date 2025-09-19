@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du rendez-vous</title>
+    <link rel="stylesheet" href="style-appointment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Détails de la mission</h1>
+
+        <div class="mission-details-box">
+            <p><strong>Diagnostiqueur :</strong> <span id="diagnostiqueur-name"></span></p>
+            <p><strong>Distance :</strong> <span id="distance-info"></span></p>
+            <p><strong>Temps de trajet estimé :</strong> <span id="duree-info"></span></p>
+        </div>
+
+        <div class="mission-details">
+            <h3>Diagnostics obligatoires</h3>
+            <ul id="diagnostics-list"></ul>
+            <h3>Services additionnels</h3>
+            <ul id="services-list"></ul>
+        </div>
+        
+        <div class="details-box">
+            <h3>Prix Total</h3>
+            <p id="prix-total-info"></p>
+        </div>
+
+        <div class="appointment-details">
+            <h3>Date et heure du rendez-vous</h3>
+            <input type="date" id="appointment-date" required>
+            <div id="time-slots-container">
+                <p>Veuillez sélectionner une date.</p>
+            </div>
+        </div>
+
+        <div class="client-info">
+            <h3>Informations du client</h3>
+            <p><strong>Êtes-vous ?</strong></p>
+            <div class="client-type-options">
+                <label>
+                    <input type="radio" name="client-type" value="particulier" checked> Un client particulier
+                </label>
+                <label>
+                    <input type="radio" name="client-type" value="professionnel"> Un client professionnel
+                </label>
+            </div>
+
+            <div id="particulier-fields" class="client-fields">
+                <input type="text" id="client-name" placeholder="Nom" required>
+                <input type="text" id="client-surname" placeholder="Prénom" required>
+                <input type="email" id="client-email" placeholder="Adresse e-mail" required>
+                <input type="tel" id="client-phone" placeholder="Numéro de téléphone" required>
+                <input type="tel" id="client-lot" placeholder="Numéro de lot" required>
+            </div>
+
+            <div id="professionnel-fields" class="client-fields" style="display:none;">
+                <input type="text" id="pro-rep-name" placeholder="Nom et prénom du représentant légal" required>
+                <input type="text" id="pro-phone" placeholder="Numéro de téléphone" required>
+                <input type="text" id="pro-address" placeholder="Adresse du siège" required>
+                <select id="pro-form" required>
+                    <option value="">Forme juridique</option>
+                    <option value="SCI">SCI</option>
+                    <option value="SARL/EURL">SARL / EURL</option>
+                    <option value="SAS/SASU">SAS / SASU</option>
+                    <option value="SCP">SCP</option>
+                </select>
+                <input type="text" id="pro-quality" placeholder="Qualité" required>
+                <input type="email" id="pro-email" placeholder="Adresse e-mail" required>
+                <input type="text" id="pro-siret" placeholder="Numéro de SIRET/RCS" required>
+                <input type="text" id="pro-tva" placeholder="Numéro de TVA" required>
+                <input type="text" id="pro-numlot" placeholder="Numéro de lot" required>
+            </div>
+        </div>
+
+        <div class="billing-info">
+            <h3>Adresse de facturation</h3>
+            <p>L’adresse de facturation est-elle identique à l’adresse du bien ?</p>
+            <div class="billing-address-options">
+                <label>
+                    <input type="radio" name="same-address" value="yes" checked> Oui
+                </label>
+                <label>
+                    <input type="radio" name="same-address" value="no"> Non
+                </label>
+            </div>
+
+            <div id="different-billing-address-fields" style="display:none;">
+                <input type="text" id="billing-address" placeholder="Adresse" required>
+                <input type="text" id="billing-city" placeholder="Ville" required>
+                <input type="text" id="billing-zip" placeholder="Code postal" required>
+            </div>
+        </div>
+
+        <button class="next-btn">Suivant</button>
+        <button class="back-btn">Retour</button>
+    </div>
+
+    <div id="payment-popup" class="popup-container">
+        <div class="popup-content">
+            <h3>Que souhaitez-vous ?</h3>
+            <div class="payment-options">
+                <button class="payment-option-btn" id="agent-pay-btn" data-option="agent">
+                    Paiement par l'agent Immo
+                </button>
+                <button class="payment-option-btn" id="client-link-btn" data-option="client">
+                    Envoi du lien de paiement / du devis au client
+                </button>
+            </div>
+            <button class="next-step-popup-btn" disabled>Suivant</button>
+        </div>
+    </div>
+    
+    <script src="script-appointment.js"></script>
+</body>
+</html>
